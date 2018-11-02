@@ -1,0 +1,64 @@
+2018-11-02 15:59:52 2234 [main] INFO  com.ztesoft.springboot.App - Starting App on learshaw-pc with PID 10072 (E:\Workspace\code\sample\SpringBootSample\target\classes started by learshaw in E:\Workspace\code\sample\SpringBootSample)
+2018-11-02 15:59:52 2250 [main] INFO  com.ztesoft.springboot.App - The following profiles are active: prod
+2018-11-02 15:59:52 2391 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a3e4aff: startup date [Fri Nov 02 15:59:52 CST 2018]; root of context hierarchy
+2018-11-02 15:59:53 2808 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-11-02 15:59:56 5894 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-11-02 15:59:56 5920 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+2018-11-02 15:59:56 5924 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5
+2018-11-02 15:59:56 6164 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/test] - Initializing Spring embedded WebApplicationContext
+2018-11-02 15:59:56 6164 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3773 ms
+2018-11-02 15:59:57 6517 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-02 15:59:57 6527 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-02 15:59:57 6527 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-02 15:59:57 6528 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-02 15:59:57 6528 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-02 15:59:57 7195 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a3e4aff: startup date [Fri Nov 02 15:59:52 CST 2018]; root of context hierarchy
+2018-11-02 15:59:57 7345 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.ztesoft.springboot.controller.IndexController.helloWord()
+2018-11-02 15:59:57 7345 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getUser]}" onto public com.ztesoft.brain.simple.businessdomain.User com.ztesoft.springboot.controller.IndexController.getUser()
+2018-11-02 15:59:57 7361 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-02 15:59:57 7361 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:59:57 7446 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:59:57 7446 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:59:58 7546 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:59:58 7997 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-11-02 15:59:58 8032 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-11-02 15:59:58 8063 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2018-11-02 15:59:58 8094 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-11-02 15:59:58 8208 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-11-02 15:59:58 8218 [main] INFO  com.ztesoft.springboot.App - Started App in 7.318 seconds (JVM running for 9.006)
+2018-11-02 16:01:05 75282 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/test] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-02 16:01:05 75283 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-02 16:01:05 75370 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 87 ms
+2018-11-02 16:13:54 1213 [main] INFO  com.ztesoft.brain.simple.App - Starting App on learshaw-pc with PID 9740 (E:\Workspace\code\sample\SpringBootSample\target\classes started by learshaw in E:\Workspace\code\sample\SpringBootSample)
+2018-11-02 16:13:54 1216 [main] INFO  com.ztesoft.brain.simple.App - The following profiles are active: prod
+2018-11-02 16:13:54 1347 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68567e20: startup date [Fri Nov 02 16:13:54 CST 2018]; root of context hierarchy
+2018-11-02 16:13:54 1598 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-11-02 16:13:56 4084 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-11-02 16:13:56 4110 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+2018-11-02 16:13:56 4113 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5
+2018-11-02 16:13:57 4328 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/test] - Initializing Spring embedded WebApplicationContext
+2018-11-02 16:13:57 4328 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2981 ms
+2018-11-02 16:13:57 4727 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-02 16:13:57 4728 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-02 16:13:57 4728 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-02 16:13:57 4729 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-02 16:13:57 4729 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'MyFilter' to urls: [/*]
+2018-11-02 16:13:57 4729 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'remoteIpFilter' to: [/*]
+2018-11-02 16:13:57 4730 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-02 16:13:58 5267 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68567e20: startup date [Fri Nov 02 16:13:54 CST 2018]; root of context hierarchy
+2018-11-02 16:13:58 5382 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getUser]}" onto public com.ztesoft.brain.simple.businessdomain.User com.ztesoft.brain.simple.controller.IndexController.getUser()
+2018-11-02 16:13:58 5385 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.ztesoft.brain.simple.controller.IndexController.helloWord()
+2018-11-02 16:13:58 5389 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-02 16:13:58 5391 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 16:13:58 5451 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 16:13:58 5451 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 16:13:58 5509 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 16:13:58 5794 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-11-02 16:13:58 5827 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-11-02 16:13:58 5858 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2018-11-02 16:13:58 5887 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-11-02 16:13:58 5921 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-11-02 16:13:58 5929 [main] INFO  com.ztesoft.brain.simple.App - Started App in 5.404 seconds (JVM running for 6.191)
+2018-11-02 16:14:05 12402 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/test] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-02 16:14:05 12402 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-02 16:14:05 12435 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms

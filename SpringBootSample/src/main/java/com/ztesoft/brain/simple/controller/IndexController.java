@@ -5,14 +5,17 @@
  * 修 改 人:  LvWenbin
  * 修改时间:  2018/11/01 16:57
  */
-package com.ztesoft.springboot.controller;
+package com.ztesoft.brain.simple.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ztesoft.brain.simple.businessdomain.User;
+
 /**
- * <一句话功能简述>
+ * Web接口样板
  * <功能详细描述>
  * 
  * @author  LvWenbin
@@ -25,5 +28,13 @@ public class IndexController {
     @GetMapping("/index")
     public ResponseEntity<String> helloWord() {
         return ResponseEntity.ok("hello word");
+    }
+    
+    @RequestMapping("/getUser")
+    public User getUser() {
+        User user=new User();
+        user.setId("1111");
+        user.setName("喵");
+        return user;
     }
 }

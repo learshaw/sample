@@ -10,7 +10,7 @@
 		<version>1.4.1.RELEASE</version>
 	</parent>
 
-	<groupId>com.ztesoft.springboot</groupId>
+	<groupId>com.ztesoft.brain.springboot</groupId>
 	<artifactId>SpringBootSample</artifactId>
 	<name>SpringBootSample</name>
 	<url>http://maven.apache.org</url>
@@ -36,6 +36,11 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.ztesoft.brain</groupId>
+			<artifactId>businessDomain</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
