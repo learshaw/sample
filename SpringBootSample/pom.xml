@@ -57,11 +57,17 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- 本地模块 -->
 		<dependency>
 			<groupId>com.ztesoft.brain.sample</groupId>
 			<artifactId>businessDomain</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.ztesoft.brain.sample</groupId>
+			<artifactId>poDomain</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>		
 	</dependencies>
 
 	<build>

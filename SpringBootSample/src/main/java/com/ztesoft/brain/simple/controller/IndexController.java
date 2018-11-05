@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ztesoft.brain.simple.businessdomain.User;
+import com.ztesoft.brain.simple.businessdomain.UserVO;
 
 /**
  * Web接口样板 <功能详细描述>
@@ -30,8 +30,8 @@ public class IndexController {
     }
     
     @RequestMapping("/getUser")
-    public User getUser() {
-        User user = new User();
+    public UserVO getUser() {
+        UserVO user = new UserVO();
         user.setId("1111");
         user.setName("喵");
         return user;
