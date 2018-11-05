@@ -1,4 +1,12 @@
 server:
   port: 8080
-  context-path: /test
-
+  servlet:
+    context-path: '/test'
+spring:
+  datasource:
+    #默认数据源  
+    default:
+      url: jdbc:mysql://10.45.34.158:3306/event_handle
+      username: root
+      password: '!QAZ2wsx'
+      driver-class-name: oracle.jdbc.OracleDriver

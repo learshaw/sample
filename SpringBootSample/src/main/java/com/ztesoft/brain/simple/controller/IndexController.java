@@ -15,13 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ztesoft.brain.simple.businessdomain.User;
 
 /**
- * Web接口样板
- * <功能详细描述>
+ * Web接口样板 <功能详细描述>
  * 
- * @author  LvWenbin
- * @version  [版本号, 2018/11/01 16:57]
- * @see  [相关类/方法]
- * @since  [产品/模块版本]
+ * @author LvWenbin
+ * @version [版本号, 2018/11/01 16:57]
+ * @see [相关类/方法]
+ * @since [产品/模块版本]
  */
 @RestController
 public class IndexController {
@@ -32,7 +31,7 @@ public class IndexController {
     
     @RequestMapping("/getUser")
     public User getUser() {
-        User user=new User();
+        User user = new User();
         user.setId("1111");
         user.setName("喵");
         return user;

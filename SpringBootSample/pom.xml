@@ -7,10 +7,11 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.1.RELEASE</version>
+		<version>2.0.4.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.ztesoft.brain.springboot</groupId>
+	<groupId>com.ztesoft.brain.sample</groupId>
 	<artifactId>SpringBootSample</artifactId>
 	<name>SpringBootSample</name>
 	<url>http://maven.apache.org</url>
@@ -19,6 +20,7 @@
 	</properties>
 
 	<dependencies>
+		<!-- SpringBoot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -32,13 +34,31 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- MyBatis -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<!-- MySql驱动 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<!-- Druid 数据库连接池依赖 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.18</version>
+		</dependency>
+		<!-- Others -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.ztesoft.brain</groupId>
+			<groupId>com.ztesoft.brain.sample</groupId>
 			<artifactId>businessDomain</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
