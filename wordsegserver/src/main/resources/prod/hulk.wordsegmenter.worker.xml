@@ -1,0 +1,7 @@
+<hulk>
+	<workerGroup groupName="wordsegmenterGroup" desc="分词服务">
+		<exe jvmName="wordSegServer" jvmArgs="-Xms512m -Xmx1g" hostGroup="workerCluster" hostName="workerNode2">
+			<worker workerName="wordSegServer" class="com.ztesoft.wordsegmenter.App"/>
+		</exe>
+	</workerGroup>
+</hulk>

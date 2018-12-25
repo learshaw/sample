@@ -1,0 +1,8 @@
+server:
+  port: 8013
+  servlet:
+    context-path: '/word'
+
+#日志配置
+logging:
+  file: wordsegmenter.log

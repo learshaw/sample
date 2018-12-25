@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="wordsegserver" default="Build" basedir=".">
+	<property environment="SystemVariable" />
+	<property name="build.dir" value="${basedir}/target/wordsegserver" />
+	<property name="wordsegserver_jar" value="${build.dir}/lib/wordsegserver-0.0.1-SNAPSHOT.jar" />
+
+	<!--默认目标-->
+	<target name="Build" depends="copy,updateJar,create-zip" />
+
+	<target name="copy">
+		<copy todir="${build.dir}/conf" overwrite="true" failonerror="no">
+			<fileset dir="${basedir}/src/main/resources/prod" />
+		</copy>
+		<copy todir="${build.dir}/lib" overwrite="true" failonerror="no">
+			<fileset dir="${basedir}/target/lib" />
+		</copy>
+		<copy tofile="${wordsegserver_jar}" overwrite="true" failonerror="no">
+			<fileset file="${basedir}/target/wordsegserver-*.jar.original" />
+		</copy>
+	</target>
+	<target name="updateJar">
+		<unjar src="${wordsegserver_jar}" dest="${build.dir}/wordsegserver_jar" />
+		<delete file="${wordsegserver_jar}" />
+		<jar basedir="${build.dir}/wordsegserver_jar" destfile="${wordsegserver_jar}">
+			<exclude name="**/application.properties" />
+			<exclude name="**/logback-spring.xml" />
+		</jar>
+		<delete dir="${build.dir}/wordsegserver_jar" />
+	</target>
+	<target name="create-zip">
+		<delete file="${basedir}/target/wordsegserver.zip" />
+		<zip destfile="${basedir}/target/wordsegserver.zip" encoding="UTF-8">
+			<zipfileset dir="${build.dir}/" prefix="wordsegserver" />
+		</zip>
+		<delete dir="${basedir}/target/wordsegserver" />
+	</target>
+</project>
