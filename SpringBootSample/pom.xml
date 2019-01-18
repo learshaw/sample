@@ -65,6 +65,7 @@
   			<artifactId>spring-data-hadoop-boot</artifactId>
     		<version>2.5.0.RELEASE</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

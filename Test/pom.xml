@@ -66,6 +66,12 @@
     		<artifactId>poi</artifactId>
     		<version>3.17</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
+		<dependency>
+    		<groupId>org.apache.kafka</groupId>
+    		<artifactId>kafka-clients</artifactId>
+    		<version>0.9.0.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
