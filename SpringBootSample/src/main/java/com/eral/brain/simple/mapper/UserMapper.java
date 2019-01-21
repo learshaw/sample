@@ -5,7 +5,7 @@
  * 修 改 人:  LvWenbin
  * 修改时间:  2018/11/05 14:27
  */
-package com.ztesoft.brain.simple.mapper;
+package com.eral.brain.simple.mapper;
 
 import java.util.List;
 
@@ -13,6 +13,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.eral.brain.simple.podomain.User;
+
 
 /**
  * $用户匹配

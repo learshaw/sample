@@ -9,7 +9,8 @@ package com.ztesoft.brain.simple.service;
 
 import java.util.List;
 
-import com.ztesoft.brain.simple.businessdomain.UserVO;
+import com.earl.brain.simple.businessdomain.UserVO;
+
 
 /**
  * $业务操作接口

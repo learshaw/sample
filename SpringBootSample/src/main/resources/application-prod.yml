@@ -10,3 +10,30 @@ spring:
       username: root
       password: '!QAZ2wsx'
       driver-class-name: com.mysql.jdbc.Driver
+kafka:
+  consumer:
+    zookeeper:
+      connect: 192.168.206.129:2181,192.168.206.129:2182,192.168.206.129:2183
+    servers: 192.168.206.129:9092
+    enable:
+      auto:
+        commit: true
+    session:
+      timeout: 6000
+    auto:
+      commit:
+        interval: 100
+      offset:
+        reset: latest
+    topic: test
+    group:
+      id: test
+    concurrency: 10
+  producer:
+    servers: 192.168.206.129:9092
+    retries: 0
+    batch:
+      size: 4096
+    linger: 1
+    buffer:
+      memory: 40960

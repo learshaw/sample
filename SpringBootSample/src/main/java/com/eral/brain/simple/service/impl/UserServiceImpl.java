@@ -5,7 +5,7 @@
  * 修 改 人:  LvWenbin
  * 修改时间:  2018/11/05 14:49
  */
-package com.ztesoft.brain.simple.service.impl;
+package com.eral.brain.simple.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;

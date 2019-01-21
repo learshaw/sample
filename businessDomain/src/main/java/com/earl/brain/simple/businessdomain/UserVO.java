@@ -5,7 +5,7 @@
  * 修 改 人:  LvWenbin
  * 修改时间:  2018/11/02 14:40
  */
-package com.ztesoft.brain.simple.businessdomain;
+package com.earl.brain.simple.businessdomain;
 
 import lombok.Data;
 

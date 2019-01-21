@@ -5,7 +5,7 @@
  * 修 改 人:  LvWenbin
  * 修改时间:  2018/11/05 15:07
  */
-package com.ztesoft.brain.simple.controller;
+package com.eral.brain.simple.controller;
 
 import java.util.List;
 

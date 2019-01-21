@@ -5,7 +5,7 @@
  * 修 改 人:  LvWenbin
  * 修改时间:  2018/11/01 16:57
  */
-package com.ztesoft.brain.simple.controller;
+package com.eral.brain.simple.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

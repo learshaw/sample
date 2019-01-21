@@ -1,67 +1,63 @@
 /*
- * 文 件 名:  UserMapper.java
+ * 文 件 名:  UserService.java
  * 版    权:  
  * 描    述:  <描述>
  * 修 改 人:  LvWenbin
- * 修改时间:  2018/11/05 14:27
+ * 修改时间:  2018/11/05 14:42
  */
-package com.ztesoft.brain.simple.mapper;
+package com.eral.brain.simple.service;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
+import com.earl.brain.simple.businessdomain.UserVO;
 
-import com.eral.brain.simple.podomain.User;
 
 /**
- * $用户匹配
+ * $业务操作接口
  * <功能详细描述>
  * 
  * @author  LvWenbin
- * @version  [版本号, 2018/11/05 14:27]
+ * @version  [版本号, 2018/11/05 14:42]
  * @see  [相关类/方法]
  * @since  [产品/模块版本]
  */
-@Mapper
-public interface UserMapper {
+public interface UserService {
     /**
-     * $增
+     * $保存
      * <功能详细描述>
      * @param user
      * @see [类、类#方法、类#成员]
      */
-    void insert(User user);
+    void save(UserVO userVO);
     
     /**
-     * $删
+     * $删除
      * <功能详细描述>
      * @param user
      * @see [类、类#方法、类#成员]
      */
-    void delete(@Param(value = "id")String id);
+    void remove(String id);
     
     /**
-     * $改
+     * $修改
      * <功能详细描述>
      * @param user
      * @see [类、类#方法、类#成员]
      */
-    void update(User user);
+    void update(UserVO userVO);
     
     /**
-     * $查
+     * $查询
      * <功能详细描述>
-     * @param user
+     * @param id
      * @see [类、类#方法、类#成员]
      */
-    User select(@Param(value = "id")String id);
+    UserVO get(String id);
     
     /**
-     * $查列表
+     * $查询所有
      * <功能详细描述>
-     * @return
      * @see [类、类#方法、类#成员]
      */
-    List<User> selectAll();
+    List<UserVO> getAll();
 }

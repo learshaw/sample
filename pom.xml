@@ -15,6 +15,7 @@
 		<module>businessDomain</module>
     <module>poDomain</module>
     <module>Test</module>
+    <module>SpringCloudSample</module>
   </modules>
 
 	<properties>
