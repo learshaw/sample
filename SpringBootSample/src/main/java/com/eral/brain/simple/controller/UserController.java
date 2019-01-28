@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.earl.brain.simple.businessdomain.UserVO;
-import com.ztesoft.brain.simple.service.UserService;
+import com.eral.brain.simple.service.UserService;
 
 /**
  * $用户服务

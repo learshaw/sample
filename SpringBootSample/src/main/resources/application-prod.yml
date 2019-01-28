@@ -10,30 +10,37 @@ spring:
       username: root
       password: '!QAZ2wsx'
       driver-class-name: com.mysql.jdbc.Driver
-kafka:
-  consumer:
-    zookeeper:
-      connect: 192.168.206.129:2181,192.168.206.129:2182,192.168.206.129:2183
-    servers: 192.168.206.129:9092
-    enable:
-      auto:
-        commit: true
-    session:
-      timeout: 6000
-    auto:
-      commit:
-        interval: 100
-      offset:
-        reset: latest
-    topic: test
-    group:
-      id: test
-    concurrency: 10
-  producer:
-    servers: 192.168.206.129:9092
-    retries: 0
-    batch:
-      size: 4096
-    linger: 1
-    buffer:
-      memory: 40960
+
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 192.168.206.129:9092
+          zk-nodes: 192.168.206.129:2181,192.168.206.129:2182,192.168.206.129:2183
+          min-partition-count: 1
+          autoCreateTopics: true
+          autoAddPartitions: false
+          
+      bindings:
+        # 以下是设置输入通道及分组和输出通道及类型
+        input:
+          destination: somestream
+          content-type: application/json
+          group: stream1
+          #开启消息分区
+          consumer:
+            partitioned: true
+        input2:
+          destination: somestream2
+          content-type: application/json
+          group: stream2
+        output:
+          destination: somestream
+          content-type: application/json
+          producer:
+            #设置分区键的表达式规则和设置消息分区数量
+            partitionKeyExpression: payload
+            partitionCount: 2
+        output2:
+          destination: somestream2
+          content-type: application/json

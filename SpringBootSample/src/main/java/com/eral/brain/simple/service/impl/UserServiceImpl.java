@@ -14,9 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.earl.brain.simple.businessdomain.UserVO;
+import com.eral.brain.simple.mapper.UserMapper;
 import com.eral.brain.simple.podomain.User;
-import com.ztesoft.brain.simple.mapper.UserMapper;
-import com.ztesoft.brain.simple.service.UserService;
+import com.eral.brain.simple.service.UserService;
 
 /**
  * $接口实现

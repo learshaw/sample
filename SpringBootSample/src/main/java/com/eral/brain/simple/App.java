@@ -1,4 +1,4 @@
-package com.ztesoft.brain.simple;
+package com.eral.brain.simple;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
